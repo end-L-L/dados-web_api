@@ -7,7 +7,7 @@ class UserSerializer(serializers.ModelSerializer):
     name = serializers.CharField(required=True)
     alias = serializers.CharField(required=True)
     email = serializers.CharField(required=True)
-
+    
     class Meta:
         model = User
         fields = ('id','name','alias', 'email')

@@ -49,7 +49,7 @@ class RegisterView(generics.CreateAPIView):
             role = 'user'
             first_name = request.data['name']
             email = request.data['email']
-            password = request.data['password']
+            password = request.data['password1']
 
             existing_user = User.objects.filter(email=email).first()
 
