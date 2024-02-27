@@ -17,3 +17,8 @@ class ProfilesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profiles
         fields = "__all__"
+
+class RecordSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Record
+        fields = '__all__'

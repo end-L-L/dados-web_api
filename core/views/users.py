@@ -76,6 +76,10 @@ class RegisterView(generics.CreateAPIView):
                                               alias= request.data["alias"])
             profile.save()
 
+            # Crear un registro para el usuario
+            record = Record.objects.create(user=user)
+            record.save()
+
             return Response({"profile_created_id": profile.id }, 201)
 
         return Response(user.errors, status=status.HTTP_400_BAD_REQUEST)

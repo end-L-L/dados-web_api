@@ -2,6 +2,7 @@ from django.views.generic.base import RedirectView
 from django.contrib import admin
 from django.urls import path
 from .views import users
+from .views import record
 from .views import auth
 
 urlpatterns = [
@@ -15,5 +16,7 @@ urlpatterns = [
     path('token/', auth.CustomAuthToken.as_view()),
     # Logout
     path('logout/', auth.Logout.as_view()),
+    # Update Record
+    path('record/', record.UpdateRecordView.as_view()),
     
 ]
