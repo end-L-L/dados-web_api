@@ -13,8 +13,8 @@ Dados Web - API
 
 2. Clonar el Proyecto
 
-3. Activar el Ambiente Virtual
-Linux: `$ source env/bin/activate`
+3. Activar el Ambiente Virtual\
+Linux: `$ source env/bin/activate`\
 Windows: `C:/path_to_the_folder/ > .\venv-name\Scripts\activate`
 
 4. Ingresar al Directorio Raíz
