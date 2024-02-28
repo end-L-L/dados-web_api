@@ -19,14 +19,14 @@ Windows: `C:/path_to_the_folder/ > .\venv-name\Scripts\activate`
 
 4. Ingresar al Directorio Raíz
 
-5. Instalar las Librerías Requeridas
+5. Instalar las Librerías Requeridas\
 `$ pip install -r requirements.txt`
 
 6. Crear la Base de Datos en MySQL con el Nombre Establecido en `my.cnf`
 
-6. Aplicar las Migraciones de Django
-`$ python3 manage.py makemigrations core`
+6. Aplicar las Migraciones de Django\
+`$ python3 manage.py makemigrations core`\
 `$ python3 manage.py migrate`
 
-7. Correr el Servidor
+7. Correr el Servidor\
  `$ python3 manage.py runserver`
